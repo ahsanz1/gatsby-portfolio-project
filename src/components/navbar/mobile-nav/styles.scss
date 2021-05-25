@@ -1,0 +1,25 @@
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 34px);
+  box-shadow: 0 5px 40px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: inherit;
+  z-index: 1;
+  background: white;
+
+  &__list {
+    list-style: none;
+    padding: 10px 0;
+
+    &--item {
+      margin: 0 30px;
+      line-height: 3.3em;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: 0;
+    }
+  }
+}

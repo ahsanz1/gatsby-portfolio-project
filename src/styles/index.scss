@@ -1,0 +1,137 @@
+.hero-component {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (min-width: 1024px) {
+    flex-wrap: nowrap;
+    margin: 5% 10%;
+    padding: 15px;
+  }
+
+  &__img-section {
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      flex: 1;
+    }
+
+    &--img-container {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      padding: 15px;
+      margin: 60px 0 30px;
+      box-shadow: 0px 0px 25px 0px lightgrey;
+
+      @media (min-width: 1024px) {
+        width: 295px;
+        height: 300px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      img {
+        border-radius: inherit;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
+  &__text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0 62.5px;
+
+    @media (min-width: 1024px) {
+      flex: 1;
+      align-items: flex-start;
+    }
+
+    p:nth-child(1) {
+      font-size: 14px;
+      color: #aaa;
+      font-weight: 300;
+      margin-bottom: 10px;
+      text-align: center;
+
+      @media (min-width: 1024px) {
+        font-size: 16px;
+      }
+    }
+
+    p:nth-child(2) {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 42px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+
+      @media (min-width: 1024px) {
+        font-size: 48px;
+        line-height: 56px;
+      }
+    }
+
+    p:nth-child(3) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.75em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    &--btn-section {
+      display: flex;
+      flex-direction: column;
+      margin-top: 27px;
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+
+      a {
+        padding: 11px 29px;
+        border-radius: 30px;
+        font-size: 14px;
+        color: #222;
+        line-height: 1.2;
+        box-shadow: 0 10px 10px -8px rgb(0 0 0 / 22%);
+        text-align: center;
+        cursor: pointer;
+      }
+
+      a:nth-child(1) {
+        border: 2px solid #007eed;
+        margin-bottom: 11px;
+        @media (min-width: 1024px) {
+          margin-right: 8px;
+        }
+      }
+
+      a:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        border: 2px solid #d5d5d5;
+
+        @media (min-width: 1024px) {
+          height: 38px;
+          padding: 0 29px;
+        }
+
+        span {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
